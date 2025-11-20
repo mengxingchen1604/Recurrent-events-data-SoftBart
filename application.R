@@ -159,4 +159,4 @@ for (i in seq_len(n)) {
 prop_martingale<- readmission[,c(1,3,4,6,12:15)]
 prop_martingale$cumnum <- ave(prop_martingale$event,prop_martingale$id,FUN = function(x) cumsum(x))
 prop_martingale$m <- unlist(M)
-write.csv(prop_martingale, "prop_readmission_martingale.csv" )
+
